@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>JSP-shell</title>
+</head>
+<body>
+    <header>
+        <h1>This is JSP-shell-project.</h1>
+    </header>
+    <div class="userId hide js-getUserIdContainer">
+            <form class="js-getUserIdForm">
+                <h2>hello, wellcome!</h2>
+                Input User Name :
+                <input type="text">
+            </form>
+    </div>
+
+    <div class="shellContain hide js-shellContain">
+       
+        <div class="shellWasInput">
+            <h3>wellcome! This is your shell history : </h3>
+            <ol>
+                <li>ls -li</li>
+                <li>clear</li>
+                <li>find</li>
+                <li>netstat -ant  | grep PORT 9000</li>
+            </ol>
+        </div>
+        <div class="cmdResult">
+            <h3>this is cmdResult section</h3>
+        </div>
+
+
+
+        <div class="shellInput">
+            <form action="#" method="get">
+                <span class="js-setUserIdSpan">
+                   
+                </span>@ :~$
+                <input type="text" >
+            </form>
+        </div>
+    </div>
+    <footer>
+        homeless-leesky
+    </footer>
+    <script src="js/userId.js"></script>
+</body>
+</html>

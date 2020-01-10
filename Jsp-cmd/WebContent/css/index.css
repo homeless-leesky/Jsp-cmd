@@ -1,14 +1,21 @@
 body{
-    background-color: #256E5E;
+    background-color: black;
     
     padding: 0;
     margin: 0;
     border: 0;
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+
 header {
     display: block;
-    color:#61A394;
+    color: white;
     text-align: center;
 }
 
@@ -20,7 +27,6 @@ header {
     width: 90%;
     height: 800px;
 }
-
 
 
 .userId{
@@ -35,6 +41,19 @@ header {
     margin-left: 10px;
 }
 
+pre{
+	width : 90%;
+	margin : 0px auto;
+    height: 80%;
+    overflow: scroll;
+}
+
+.orderlist{
+	width : 90%;
+    margin : 0px auto;
+    height: 80%;
+    overflow: scroll;
+}
 
 
 .hide{
@@ -47,12 +66,13 @@ header {
 
 .shellWasInput{
     border : 1px solid white;
-    height: 35%;
+    height: 30%;
+    margin-bottom: 10px;
 }
 
 .shellInput{
     width:100%;
-    height: 5%;
+    height: 3%;
     border :1px solid white;
     position: absolute;
     bottom: 0;
@@ -68,15 +88,23 @@ input:focus{
     outline:none;
 }
 
+
 .cmdResult{
+	margin-bottom: 10px;
     border: 1px solid white;
-    height: 60%;
+    height: 64%;
+}
+.notice{
+	margin-left : 10px;
 }
 footer{
+	background-color : #212f2f;
+	font-weight : 900;
+	text-align : center;
+	font-size : 2em;
     width: 100%;
     height: 50px;
     position: absolute;
     bottom: 0;
     color: white;
-    background-color: #61A394;
 }

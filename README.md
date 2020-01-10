@@ -2,7 +2,9 @@
 
 <img src="./cap/jsp-cmd.png" />
 
-**This project creates cmd using jsp.**
+
+### This project creates cmd using jsp.
+   - In fact, this runs the cmd process in java.
 
 <hr>
 

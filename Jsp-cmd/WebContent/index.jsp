@@ -32,10 +32,10 @@
         <div class="cmdResult">
             <h3 class="notice">this is cmdResult section</h3>
             <pre>
-            <%
+            		<%
 				String inputUserCmd = request.getParameter("userInputCmd");
 				if(inputUserCmd == null) {
-					%>
+			%>
 					<p align =center>
 ***********************************명령어를 입력해 주세요***********************************
 					</p>
@@ -57,7 +57,7 @@
 						result = br.readLine(); 
 					}
 				}
-		%>
+			%>
             </pre>     
         </div>
 

